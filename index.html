@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AsoCraft Studio creates contemporary African-inspired clothing and accessories.">
+  <title>AsoCraft Studio | Wear Your Story</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home">ASO<span>CRAFT</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a class="nav-contact" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">CONTEMPORARY AFRICAN FASHION</p>
+        <h1>Wear your story.<br><span>Own your style.</span></h1>
+        <p class="hero-copy">Thoughtfully designed clothing and accessories inspired by African creativity, colour and culture.</p>
+        <a class="button button-light" href="#products">Explore the collection</a>
+      </div>
+    </section>
+
+    <section class="intro section container">
+      <div>
+        <p class="eyebrow dark-eyebrow">WELCOME TO ASOCRAFT</p>
+        <h2>Style with a sense<br>of <em>identity.</em></h2>
+      </div>
+      <p class="intro-copy">AsoCraft Studio is a fashion brand celebrating individuality through modern designs with African inspiration. We bring together expressive patterns, comfortable pieces and thoughtful details for everyday life and special moments.</p>
+    </section>
+
+    <section class="about-section section" id="about">
+      <div class="container about-grid">
+        <div class="about-image" role="img" aria-label="Colourful African-inspired fashion fabric"></div>
+        <div class="about-text">
+          <p class="eyebrow dark-eyebrow">OUR STORY</p>
+          <h2>Rooted in culture.<br><em>Made for today.</em></h2>
+          <p>AsoCraft Studio was created around a simple idea: fashion can be a way to express where we come from and who we are becoming. Our designs take inspiration from African fabrics, craftsmanship and the confidence of people who enjoy expressing themselves.</p>
+          <p>We aim to make distinctive style accessible, while encouraging creativity, responsible choices and appreciation for local design.</p>
+          <div class="values">
+            <div><strong>01</strong><span>Creative expression</span></div>
+            <div><strong>02</strong><span>Cultural inspiration</span></div>
+            <div><strong>03</strong><span>Everyday comfort</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products-section container" id="products">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow dark-eyebrow">THE COLLECTION</p>
+          <h2>Find your <em>signature.</em></h2>
+        </div>
+        <p>Pieces designed to help you show up as yourself.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85" alt="Fashion clothing collection" onerror="this.src='https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85'">
+          <div class="product-info"><div><h3>Everyday Heritage</h3><p>Comfortable statement outfits for everyday wear.</p></div><span>01</span></div>
+        </article>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85" alt="Contemporary fashion outfit">
+          <div class="product-info"><div><h3>Signature Pieces</h3><p>Distinctive designs for events and special occasions.</p></div><span>02</span></div>
+        </article>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=85" alt="Fashion accessories and clothing">
+          <div class="product-info"><div><h3>Style Accessories</h3><p>Finishing touches that bring an outfit together.</p></div><span>03</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="statement">
+      <div class="container statement-inner">
+        <p class="eyebrow">ASOCRAFT STUDIO</p>
+        <h2>Culture is not just<br>where we come from.<br><em>It is how we express ourselves.</em></h2>
+      </div>
+    </section>
+
+    <section class="section contact-section container" id="contact">
+      <div class="contact-copy">
+        <p class="eyebrow dark-eyebrow">LET'S CONNECT</p>
+        <h2>Have a question?<br><em>Talk to us.</em></h2>
+        <p>Ask about our collections, make an enquiry or send us a message. Our sample contact details are shown below for this student project.</p>
+        <div class="contact-details">
+          <p><strong>Email</strong><br>hello@asocraft.example</p>
+          <p><strong>Telephone</strong><br>+234 800 000 0000</p>
+          <p><strong>Location</strong><br>Lagos, Nigeria</p>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <label for="fullName">Full name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Your full name">
+        <small class="error" id="nameError"></small>
+
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com">
+        <small class="error" id="emailError"></small>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="What is your message about?">
+        <small class="error" id="subjectError"></small>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message..."></textarea>
+        <small class="error" id="messageError"></small>
+
+        <button class="button button-dark" type="submit">Submit message</button>
+        <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+        <p class="form-note">Demonstration form: it validates your entries but does not send or store messages.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo footer-logo" href="#home">ASO<span>CRAFT</span></a>
+      <p>Wear your story. Own your style.</p>
+      <p>© <span id="year"></span> AsoCraft Studio. Student project.</p>
+    </div>
+  </footer>
+</body>
+</html>
